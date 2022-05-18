@@ -14,6 +14,7 @@ $search-button-width: 52px;
 
     .inner {
         height: 100%;
+        padding: 0 $default-layout-horizontal-spacer;
         width: $default-layout-header-width;
         display: flex;
         align-items: center;
@@ -108,9 +109,40 @@ $search-button-width: 52px;
     }
 }
 
+// Actions
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .more-btn {
     font-size: 2rem;
     margin-left: 28px;
     background-color: transparent;
     padding: 4px 8px;
+    cursor: pointer;
+}
+
+.action-btn {
+    display: flex;
+    color: #161823;
+    background-color: transparent;
+    padding: 4px 12px;
+}
+
+.action-mes-btn {
+    display: flex;
+    color: #161823;
+    background-color: transparent;
+    padding: 7px 12px;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 14px;
+    cursor: pointer;
 }

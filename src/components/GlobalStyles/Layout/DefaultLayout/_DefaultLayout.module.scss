@@ -6,6 +6,7 @@
     align-items: center;
 
     .container {
+        padding: 0 $default-layout-horizontal-spacer;
         width: $default-layout-header-width;
         display: flex;
 
