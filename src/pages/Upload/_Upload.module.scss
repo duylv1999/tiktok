@@ -1,0 +1,45 @@
+.wrapper {
+    background-color: #f8f8f8;
+}
+
+.body {
+    width: 1150px;
+    margin: 0 auto;
+    min-height: 1000px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.content {
+    border-radius: 5px;
+    padding: 24px 56px;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 6%) 0px 2px 8px;
+
+    .content-title {
+        color: rgba(22, 24, 35, 0.5);
+    }
+
+    .content-info {
+        display: flex;
+        margin-top: 24px;
+        margin-bottom: 130px;
+    }
+}
+
+.wrapper-input {
+    margin-top: 24px;
+    background-color: aqua;
+}
+
+.wrapper-input-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 35px;
+}
+
+.wrapper-input-body-title {
+    text-align: center;
+}
