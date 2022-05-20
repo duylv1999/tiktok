@@ -1,3 +1,6 @@
+@import '../../components/GlobalStyles/GlobalStyles.scss';
+$color-border-content: #1618231f;
+
 .wrapper {
     background-color: #f8f8f8;
 }
@@ -17,6 +20,7 @@
     box-shadow: rgb(0 0 0 / 6%) 0px 2px 8px;
 
     .content-title {
+        font-size: 1.8rem;
         color: rgba(22, 24, 35, 0.5);
     }
 
@@ -28,18 +32,236 @@
 }
 
 .wrapper-input {
+    height: 458px;
     margin-top: 24px;
-    background-color: aqua;
+    border: 2px dashed rgba(22, 24, 35, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+        border: 2px dashed $primary;
+        background: rgba(22, 24, 35, 0.03);
+    }
 }
 
 .wrapper-input-body {
+    height: 100%;
     display: flex;
+    width: 260px;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
     padding: 0 35px;
+
+    .text-sub {
+        margin-top: 4px;
+        margin-bottom: 24px;
+        color: #161823bf;
+    }
 }
 
 .wrapper-input-body-title {
-    text-align: center;
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.text-info-video {
+    .text-info-video-detail {
+        margin-bottom: 6px;
+        color: #16182380;
+        font-size: 1.4rem;
+    }
+}
+
+// Content-form
+.content-form {
+    margin-left: 24px;
+    flex: 1;
+
+    .title-note {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .text-note {
+        color: $text-color;
+        font-weight: 600;
+    }
+
+    .text-number {
+        font-size: 1.3rem;
+        color: #16182380;
+    }
+
+    & input {
+        width: 100%;
+        padding-left: 16px;
+        min-height: 46px;
+        border-radius: 4px;
+        margin-top: 4px;
+    }
+
+    .input-note {
+        display: flex;
+        border: 1px solid #1618231f;
+    }
+
+    .input-icon {
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+        cursor: pointer;
+        img {
+            width: 20px;
+            height: 20px;
+            margin-left: 8px;
+        }
+    }
+
+    .note-image {
+        margin-top: 24px;
+    }
+
+    .container-image {
+        width: 100%;
+        height: 168px;
+        padding: 6px;
+        border: 1px solid $color-border-content;
+        border-radius: 2px;
+    }
+
+    .background-image {
+        width: 84.2px;
+        height: 150px;
+        background-color: #16182308;
+    }
+
+    .rule-video {
+        margin-top: 24px;
+    }
+
+    .rule-video-title {
+        margin-bottom: 4px;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .who-watch {
+        width: 300px;
+        height: 36px;
+        border: 1px solid $color-border-content;
+        outline: none;
+
+        option {
+            width: 100%;
+            padding: 10px 12px;
+            background-color: #1618230f;
+        }
+    }
+
+    .rule-allow {
+        margin-top: 24px;
+    }
+
+    .rule-checkbox {
+        display: flex;
+        margin-top: 6px;
+        .container {
+            display: block;
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+            margin-right: 32px;
+            cursor: pointer;
+            font-size: 1.6rem;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Hide the browser's default checkbox */
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        .container .container-text {
+            position: relative;
+            top: -2px;
+        }
+
+        /* Create a custom checkbox */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 16px;
+            width: 16px;
+            background-color: $white-color;
+            border: 1px solid $primary;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .container:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+
+        /* When the checkbox is checked, add a blue background */
+        .container input:checked ~ .checkmark {
+            background-color: $primary;
+        }
+
+        // .container input:hover ~ .checkmark {
+        //     background-color: #ea284e;
+        // }
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .checkmark:after {
+            content: '';
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the checkmark when checked */
+        .container input:checked ~ .checkmark:after {
+            display: block;
+        }
+
+        /* Style the checkmark/indicator */
+        .container .checkmark:after {
+            left: 4px;
+            top: 0px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+    .toggle-check {
+        margin-bottom: 6px;
+    }
+
+    .copy-right {
+        display: flex;
+        font-size: 1.2rem;
+        color: #161823bf;
+
+        .copy-right-info {
+            color: $text-color;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+
+    .btn-row {
+        margin-top: 24px;
+    }
 }

@@ -39,7 +39,6 @@ function Search() {
             .catch(() => {
                 setLoading(true);
             });
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [debounced]);
 
     const handleClear = () => {

@@ -21,6 +21,7 @@
 
     &.disabled {
         pointer-events: none;
+        background-color: #f2f2f2;
         opacity: 0.5;
     }
 }
@@ -67,6 +68,11 @@
     }
 }
 
+// width-large
+.widthLarge {
+    padding: 7.5px 57px;
+}
+
 // size small
 .small {
     min-width: 88px;
@@ -85,4 +91,19 @@
     }
 }
 
+.mt32 {
+    margin-top: 32px;
+}
+
+.btnTextColor {
+    color: #161823;
+    font-weight: 700;
+    background-color: $white-color;
+    border: 1px solid #e3e3e3;
+
+    &:hover {
+        background-color: rgb(248, 248, 248);
+        border-color: rgb(204, 204, 204);
+    }
+}
 //custome

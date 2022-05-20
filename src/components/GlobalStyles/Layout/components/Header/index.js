@@ -109,9 +109,11 @@ function Header() {
                     {currentUser ? (
                         <>
                             <Tippy delay={[0, 300]} content="Upload video" placement="bottom">
-                                <button className={cx('action-btn')}>
-                                    <UploadIcon />
-                                </button>
+                                <Link to="/upload">
+                                    <button className={cx('action-btn')}>
+                                        <UploadIcon />
+                                    </button>
+                                </Link>
                             </Tippy>
 
                             <Tippy delay={[0, 300]} content="Message" placement="bottom">
