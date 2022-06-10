@@ -1,7 +1,9 @@
 .wrapper {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     padding-top: 8px;
-    // max-height: min((100vh - 96px) - 60px, 734px);
+    max-height: 567px;
     min-height: 100px;
     border-radius: 8px;
     background: rgb(255, 255, 255);

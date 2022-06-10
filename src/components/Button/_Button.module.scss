@@ -9,7 +9,7 @@
     border-radius: 4px;
     font-size: 1.6rem;
     font-weight: 700;
-    font-family: 'ProximaNova', sans-serif;
+    font-family: $font-family;
     background-color: $white-color;
     border: 1px solid transparent;
     user-select: none;
@@ -28,6 +28,10 @@
 
 .icon + .title,
 .title + .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.4rem;
     margin-left: 8px;
 }
 
@@ -91,8 +95,20 @@
     }
 }
 
+.h24 {
+    height: 24px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
 .mt32 {
     margin-top: 32px;
+}
+
+.w100percent {
+    width: 100%;
 }
 
 .btnTextColor {

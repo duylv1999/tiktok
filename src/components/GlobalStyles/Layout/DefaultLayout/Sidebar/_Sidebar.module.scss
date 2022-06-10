@@ -1,3 +1,111 @@
+@import '../../../GlobalStyles.scss';
+
 .wrapper {
     width: 356px;
+    padding: 20px 8px 26px 8px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .header-sidebar {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8px;
+
+        .header-sidebar-item {
+            height: 4.8rem;
+            margin: 0;
+            justify-content: flex-start;
+            width: 100%;
+            color: $text-color;
+
+            &:hover {
+                background-color: #16182308;
+            }
+        }
+
+        .header-sidebar-item-text {
+            margin-left: 8px;
+            font-size: 1.8rem;
+        }
+
+        .text-active {
+            color: $primary;
+        }
+    }
+
+    .spacer {
+        border-bottom: 0.05rem solid #1618231f;
+        margin: 0 8px;
+    }
+
+    .notify-login {
+        padding: 20px 8px 24px 8px;
+    }
+
+    .notify-login-text {
+        color: #16182380;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .suggested-accounts {
+        padding: 16px 0;
+    }
+
+    .suggested-accounts-text,
+    .discover-text {
+        padding: 0 8px;
+        margin-bottom: 8px;
+        font-size: 1.4rem;
+        line-height: 20px;
+        color: #161823bf;
+        font-weight: 600;
+    }
+
+    .see-all {
+        padding: 0 8px;
+        margin-top: 8px;
+        cursor: pointer;
+    }
+
+    .suggested-accounts-more {
+        padding: 0 8px;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: #fe2c55;
+    }
+
+    .discover {
+        padding: 16px 8px 8px;
+    }
+
+    .discover-text {
+        padding-bottom: 16px;
+    }
+
+    .list-hashtag {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .wrap-btn {
+        display: block;
+        max-width: 100%;
+        width: fit-content;
+    }
+
+    .btn-hashtag {
+        display: flex;
+        margin: 0 8px 12px 0;
+        padding: 3px 10px;
+        box-shadow: none;
+    }
+
+    .btn-hashtag-text {
+        margin-left: -6px;
+        font-size: 1.4rem;
+        color: #161823bf;
+        font-weight: 400;
+    }
 }

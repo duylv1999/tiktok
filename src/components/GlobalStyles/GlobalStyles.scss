@@ -11,6 +11,7 @@ $search-height: 46px;
 $search-border-radius: 92px;
 $search-top-spacer: 9px;
 $search-button-width: 52px;
+$font-family: 'ProximaNova', sans-serif;
 
 * {
     margin: 0;
@@ -23,7 +24,7 @@ html {
 }
 
 body {
-    font-family: 'ProximaNova', sans-serif;
+    font-family: $font-family;
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
